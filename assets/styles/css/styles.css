@@ -1,0 +1,220 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #FAEFDB;
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+body {
+  background-color: #47BBBB;
+}
+body .header {
+  background-color: #FAEFDB;
+}
+body .header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .header .header-container .logo-container {
+  width: 150px;
+  padding: 10px;
+}
+body .header .header-container .logo-container img {
+  width: 100%;
+}
+body .header .header-container h1 {
+  font-family: "Indie Flower", cursive;
+  color: #47BBBB;
+  font-size: 32px;
+}
+body .header .header-container .menu-icon {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+body .home {
+  padding: 20px;
+}
+@media screen and (min-width: 899px) {
+  body .home .home-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+body .home .home-section .home-section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  justify-self: start;
+  height: -moz-max-content;
+  height: max-content;
+  align-self: end;
+}
+body .home .home-section .home-section-content h2 {
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+  font-size: 28px;
+}
+body .home .home-section .home-section-content .home-section-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 630px;
+  margin-right: 25px;
+}
+body .home .home-section .home-section-content .home-section-text p {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(14px, 5vw, 16px);
+}
+body .home .home-section .home-section-content .button {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  border-radius: 500px;
+  border: 5px solid white;
+}
+body .home .home-section .home-section-content .button p {
+  text-align: center;
+  grid-column: 2/3;
+  font-family: "Montserrat", sans-serif;
+}
+body .home .home-section .home-section-img {
+  display: none;
+}
+@media screen and (min-width: 899px) {
+  body .home .home-section .home-section-img {
+    display: block;
+    width: 350px;
+    height: 550px;
+    justify-self: end;
+  }
+  body .home .home-section .home-section-img img {
+    width: 100%;
+    height: 100%;
+  }
+}
+body .home .menu-container {
+  background-image: url("../../img/carte-background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px 10px;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+body .home .menu-container .mobile-menu-title {
+  font-family: "Indie Flower", cursive;
+  flex: 100%;
+}
+@media screen and (min-width: 899px) {
+  body .home .menu-container .mobile-menu-title {
+    display: none;
+  }
+}
+body .home .menu-container .menu-item {
+  background-image: url("../../img/item-cart.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 10px;
+}
+body .home .menu-container .menu-item h3 {
+  font-family: "Indie Flower", cursive;
+}
+body .home .menu-container .menu-item p {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+body .home .menu-container .dekstop-menu-title {
+  display: none;
+}
+@media screen and (min-width: 899px) {
+  body .home .menu-container .dekstop-menu-title {
+    display: block;
+    margin: 35px;
+    font-family: "Indie Flower", cursive;
+    font-size: 28px;
+  }
+}
+body .footer {
+  background: #FAEFDB;
+  border-radius: 50px 0 0 0;
+  padding: 20px;
+}
+body .footer p,
+body .footer li {
+  color: #47BBBB;
+}
+body .footer .footer-infos-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: ²² center;
+  justify-content: space-between;
+  gap: 50px;
+}
+body .footer .footer-infos-container .footer-infos {
+  max-width: 300px;
+}
+body .footer .footer-infos-container .footer-infos .footer-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+body .footer .footer-infos-container .footer-infos .footer-location img {
+  width: 30px;
+  height: 40px;
+}
+body .footer .footer-infos-container .links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 600px;
+  width: 100%;
+}
+body .footer .footer-infos-container .links-container .links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body .footer .container {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #47BBBB;
+}
+body .footer .copyright {
+  margin-top: 20px;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */
